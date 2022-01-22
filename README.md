@@ -25,7 +25,7 @@ assert(printToString(mul), "(2 + x) * x");
 Context ctx;
 ctx.setVar("x", 10);
 
-assertEqualEvals(mul->eval(ctx), 120);
+assert(mul->eval(ctx), 120);
 ```
 
 Additionally added to `Expression` is the `simplified` method, which takes the context and returns a new `Expression`:
